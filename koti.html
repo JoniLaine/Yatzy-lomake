@@ -1,0 +1,300 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="tyyli.css">
+  <title>Yatzy</title>
+
+</head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">YATZY</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Tervetuloa pelaamaan!</p>
+  </div>
+ 
+</div>
+
+
+
+<body>
+
+  <!--OTSIKOT-->
+    
+
+
+<p>Valitse pelaajien määrä ja syötä pelaajien nimet.<br>
+Lomake laskee automaattisesti annetut pisteet yhteensä painaessa "Laske" painiketta.</p>
+<br>
+
+<!--Pelaajamäärän syöttökenttä-->
+<form>
+  <input type="number" id="myNumber">
+  </form>
+
+<p id="maara"></p>
+
+
+<p>Valitse pelaajien määrä.</p>
+<br>
+<!--Nimen lisäyskenttä-->
+<input type="text" id="myText" value="">
+
+<p>Lisää nimi ja paina "OK!".</p>
+
+
+<br><input type="button" class="button" value="OK!" onclick="nimenLisays()"><br>
+<!--Nimen lisäys lomakkeeseen -funktio-->
+
+<script>
+function nimenLisays() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("pelaaja").innerHTML = x;
+}
+</script>
+
+<script>
+console.log(getDay());</script>
+<!--Pelaajamäärän käsittelyfunktio-->
+<script>
+function myFunction() {
+  var x = document.getElementById("maara").value;
+  document.getElementById("maara").innerHTML = x;
+}
+</script>
+<script>
+let today = new Date();
+let currentDay = today.getDay();
+let options = {
+    weekday:"long",
+    day:"numeric",
+    month:"long"
+};
+let day = today.toLocaleDateString("fi-FI",options);
+</script>
+<!--Pistelomake alkaa-->
+
+  <div id = "lomake" style="overflow-x:auto;">
+  <table style="margin-left:auto;margin-right:auto;">
+  <tr>
+ <th>
+  <div id= "nimikentta">
+  <p id="pelaaja"></p></div> 
+
+   <!--Pelaajan nimikenttä-->
+ <p id="nimikentta"></p>
+</th>
+ <th></th>
+  </tr>
+    <tr>
+      <th>Laji</th>
+      <th>Pisteet</th> 
+     
+    </tr>
+
+    <tr>
+      <td>Ykköset</td>
+      <td>  <form>
+       <input type="text" name="num1"><br>
+
+    </form>
+     
+   </td>
+  
+    </tr>
+    <tr>
+      <td>Kakkoset</td>
+      <td>  <form>
+    
+        <input type="text" name="num2"><br>
+
+    </form>
+     
+</td>
+
+    </tr>
+    <tr>
+      <td>Kolmoset</td>
+      <td> <form>
+        <input type="text" name="num3"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Neloset</td>
+      <td> <form>
+        <input type="text" name="num4"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Vitoset</td>
+      <td> <form>
+        <input type="text" name="num5"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Kutoset</td>
+      <td> <form>
+        <input type="text" name="num6"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <th>BONUS</th>
+      <td> <form>
+        <input type="text" name="bonus" value=""><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Pari</td>
+      <td> <form>
+        <input type="text" name="num7"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Kaksi paria</td>
+      <td> <form>
+        <input type="text" name="num8"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Neljä samaa</td>
+      <td> <form>
+        <input type="text" name="num9"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Kolme samaa</td>
+      <td> <form>
+        <input type="text" name="num10"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Täyskäsi</td>
+      <td> <form>
+        <input type="text" name="num11"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Pieni suora</td>
+      <td> <form>
+        <input type="text" name="num12"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Iso suora</td>
+      <td> <form>
+        <input type="text" name="num13"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Sattuma</td>
+      <td> <form>
+        <input type="text" name="num14"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <td>Yatzy</td>
+      <td> <form>
+        <input type="text" name="num15"><br>
+ 
+     </form></td>
+
+    </tr>
+    <tr>
+      <th>YHTEENSÄ</th>
+      <td>  <form>
+   <!--Summa ja laskemiseen tarvittava nappi. Nappi olisi hyvä siirtää muualle tästä ruudusta vielä-->
+         <br>
+         <input type="text" name="sum"><br>
+         <br>
+        <input type="button" value="Laske" onclick="calcSum()"><br>
+        <br>
+    </form>
+     
+    <!--Pisteiden laskeminen ja bonukset alkaa-->
+    <script>
+        function calcSum() {
+            let num1 = document.getElementsByName("num1")[0].value;
+            let num2 = document.getElementsByName("num2")[0].value;
+            let num3 = document.getElementsByName("num3")[0].value;
+            let num4 = document.getElementsByName("num4")[0].value;
+            let num5 = document.getElementsByName("num5")[0].value;
+            let num6 = document.getElementsByName("num6")[0].value;
+            let num7 = document.getElementsByName("num7")[0].value;
+            let num8 = document.getElementsByName("num8")[0].value;
+            let num9 = document.getElementsByName("num9")[0].value;
+            let num10 = document.getElementsByName("num10")[0].value;
+            let num11 = document.getElementsByName("num11")[0].value;
+            let num12 = document.getElementsByName("num12")[0].value;
+            let num13 = document.getElementsByName("num13")[0].value;
+            let num14 = document.getElementsByName("num14")[0].value;
+            let num15 = document.getElementsByName("num15")[0].value;
+            let sum = Number(num1) + Number(num2) + Number(num3) + Number(num4) + Number(num5) + Number(num6) + Number(num7) + Number(num8) +
+            Number(num9) + Number(num10) + Number(num11) + Number(num12) + Number(num13) + Number(num14) + Number(num15);
+            if ( Number(num1) + Number(num2) + Number(num3) + Number(num4) + Number(num5) + Number(num6) >= 63){
+              sum = sum + 50;
+        
+           document.getElementsByName("bonus")[0].value = 50;
+           
+            }
+            document.getElementsByName("sum")[0].value = sum;
+        }
+    </script></td>
+
+
+    </tr>
+    <br>
+  </table>
+    <!--Pelin siirtäminen tietokantaan. Tämä toiminto tulee vain yksinpeliin.-->
+
+    <br><input type="button" class="button" value="Tallenna" onclick="calcSum()">
+</div>
+<div class="footer">
+  <br>
+
+
+  <p>Yatzyn pelaaminen ei ole aiemmin ollut näin helppoa!</p><br>
+</div>
+
+
+</body>
+</html>

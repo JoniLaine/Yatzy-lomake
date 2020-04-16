@@ -1,0 +1,49 @@
+body {
+
+    font-family: 'Courier New', 'Arial Narrow', Arial, serif;
+    background-color: rgb(24, 59, 24);
+    text-align: center;
+}
+p {
+  font-family: 'Courier New', 'Arial Narrow', Arial, serif;
+  text-align: center;
+  color: rgb(209, 198, 198);
+}
+
+body, html {height: 100%}
+.bgimg {
+
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.lomake, table, footer, .button{
+  align-content: center;
+  text-align: center;
+  font-family: 'Courier New', 'Arial Narrow', Arial, serif;
+}
+
+.nimikentta {
+  font-size: large;
+}
+
+h1, h2 {
+  font-family: 'Courier New', 'Arial Narrow', Arial, serif;
+    text-align: center;
+    color: rgb(209, 198, 198);
+}
+
+th {
+    height: 50px;
+  }
+
+table, th, td {
+    align-self: center;
+    border: 1px solid rgb(209, 198, 198);
+    color:  rgb(209, 198, 198);
+  }
+
+  table {
+    border-collapse: collapse;
+  }
